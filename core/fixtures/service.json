@@ -1,0 +1,152 @@
+[
+{
+    "model": "core.emergencyservice",
+    "pk": 1,
+    "fields": {
+        "name": "Скорая помощь два раза",
+        "code": 3,
+        "phone": "103",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 2,
+    "fields": {
+        "name": "Пожаркаааааааааааааааа",
+        "code": 1,
+        "phone": "5555555",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 3,
+    "fields": {
+        "name": "Пожарная помощь",
+        "code": 1584,
+        "phone": "112",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 4,
+    "fields": {
+        "name": "Скорая помощь",
+        "code": 3,
+        "phone": "103",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 5,
+    "fields": {
+        "name": "Пожарная помощь",
+        "code": 1,
+        "phone": "101",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 6,
+    "fields": {
+        "name": "Газовая служба",
+        "code": 654878952121,
+        "phone": "104",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 7,
+    "fields": {
+        "name": "ЖКХ",
+        "code": null,
+        "phone": "104",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 8,
+    "fields": {
+        "name": "Скорая помощь",
+        "code": 3,
+        "phone": "103",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 9,
+    "fields": {
+        "name": "Пожарная помощь",
+        "code": 1,
+        "phone": "101",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 10,
+    "fields": {
+        "name": "СЛужба",
+        "code": null,
+        "phone": "115",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 11,
+    "fields": {
+        "name": "Полиция",
+        "code": null,
+        "phone": "102",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 12,
+    "fields": {
+        "name": "GhostBaster",
+        "code": null,
+        "phone": "888",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 13,
+    "fields": {
+        "name": "Mersedes",
+        "code": null,
+        "phone": "0848",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 14,
+    "fields": {
+        "name": "Одна",
+        "code": 9052,
+        "phone": "Второй",
+        "appeal": null
+    }
+},
+{
+    "model": "core.emergencyservice",
+    "pk": 15,
+    "fields": {
+        "name": "Скорая помощь два раза",
+        "code": 3,
+        "phone": "103",
+        "appeal": null
+    }
+}
+]

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+    <h3></h3>
+        <p>Дата обращения: {{ incident.date|date:"d-m-Y"  }}</p>
+        <p>Номер обращения: {{ incident.number }}</p>
+        <p>Кол-во пострадавших: {{ incident.victims|default:"-" }}</p>
+        <p>Статус: {{ incident.status|yesno:"В работе, Завершено"  }}</p>
+        <p>Заявитель: {{ incident.applicant|default:"-" }}</p>
+        <p>Задействованные службы: {{ incident.service.all|join:" , "|default:'-' }}</p>
+    </div>
+{% endblock %}

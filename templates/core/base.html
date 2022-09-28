@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+    {% include 'footer.html' %}
+    <h2>Стартовая страница</h2>
+    <p><a href="{% url 'core:list_incident' %}">Список обращений</a></p>
+    <p><a href="{% url 'core:person_list' %}">Список заявителей</a></p>
+    <p><a href="{% url 'core:service_list' %}">Список служб</a></p>
+    <p><a href="{% url 'core:phone_person' %}">Телефон заявителя</a></p>
+    <p><a href="{% url 'core:redirect' %}">На главную страницу</a></p>
+    <p><a href="{% url 'core:request_data' %}">Данные запроса</a></p>
+    <p><a href="{% url 'core:person_data' %}">Данные заявителя</a></p>
+    <p><a href="{% url 'core:incidents_count' %}">Колличество обращений</a></p>
+    <p><a href="{% url 'core:create_person' %}">Создать Персонажа</a></p>
+    <p><a href="{% url 'core:create_service' %}">Создать службу</a></p>
+    <p><a href="{% url 'core:create_incident' %}">Создать обращение</a></p>
+    <p><a href="{% url 'core:update_incident' 1%}">Обновить данные обращения</a></p>
+    <p><a href="{% url 'core:update_person' 1%}">Обновить данные человека</a></p>
+    <p><a href="{% url 'core:update_service' 1%}">Обновить данные службы</a></p>
+    <hr>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

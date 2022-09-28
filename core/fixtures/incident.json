@@ -1,0 +1,193 @@
+[
+{
+    "model": "core.incident",
+    "pk": 1,
+    "fields": {
+        "date": "2022-08-24T11:54:51.455Z",
+        "number": 3,
+        "victims": 2,
+        "call": true,
+        "status": "STATUS_CHOICE_IN_WORK",
+        "applicant": null,
+        "service": [
+            2,
+            1
+        ]
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 2,
+    "fields": {
+        "date": "2022-08-24T12:00:56.088Z",
+        "number": 1,
+        "victims": 1,
+        "call": true,
+        "status": "STATUS_CHOICE_IN_WORK",
+        "applicant": null,
+        "service": [
+            2
+        ]
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 3,
+    "fields": {
+        "date": "2022-08-24T12:15:00.488Z",
+        "number": 2,
+        "victims": 0,
+        "call": true,
+        "status": "STATUS_CHOICE_IN_WORK",
+        "applicant": 1,
+        "service": []
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 4,
+    "fields": {
+        "date": "2022-08-25T06:26:08.494Z",
+        "number": 5,
+        "victims": 1,
+        "call": true,
+        "status": "STATUS_CHOICE_IN_WORK",
+        "applicant": null,
+        "service": [
+            3
+        ]
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 5,
+    "fields": {
+        "date": "2022-08-26T06:55:32.497Z",
+        "number": 0,
+        "victims": 0,
+        "call": true,
+        "status": "STATUS_CHOICE_IN_WORK",
+        "applicant": 8,
+        "service": []
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 6,
+    "fields": {
+        "date": "2022-08-30T06:16:29.318Z",
+        "number": null,
+        "victims": 2,
+        "call": true,
+        "status": "in_work",
+        "applicant": 9,
+        "service": [
+            3
+        ]
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 10,
+    "fields": {
+        "date": "2022-08-30T10:26:05.418Z",
+        "number": null,
+        "victims": 2,
+        "call": true,
+        "status": "in_work",
+        "applicant": 1,
+        "service": [
+            3
+        ]
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 11,
+    "fields": {
+        "date": "2022-08-31T01:29:33.331Z",
+        "number": null,
+        "victims": 2,
+        "call": true,
+        "status": "in_work",
+        "applicant": 1,
+        "service": [
+            2
+        ]
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 12,
+    "fields": {
+        "date": "2022-08-31T14:01:53.109Z",
+        "number": 30,
+        "victims": 2,
+        "call": true,
+        "status": "STATUS_CHOICE_IN_WORK",
+        "applicant": null,
+        "service": [
+            9,
+            8
+        ]
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 13,
+    "fields": {
+        "date": "2022-08-31T14:04:10.876Z",
+        "number": 11,
+        "victims": 1,
+        "call": true,
+        "status": "STATUS_CHOICE_IN_WORK",
+        "applicant": null,
+        "service": [
+            9
+        ]
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 14,
+    "fields": {
+        "date": "2022-08-31T14:05:00.757Z",
+        "number": 20,
+        "victims": 0,
+        "call": true,
+        "status": "STATUS_CHOICE_IN_WORK",
+        "applicant": 37,
+        "service": []
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 15,
+    "fields": {
+        "date": "2022-09-02T07:29:14.558Z",
+        "number": null,
+        "victims": 2,
+        "call": true,
+        "status": "in_work",
+        "applicant": 31,
+        "service": [
+            11
+        ]
+    }
+},
+{
+    "model": "core.incident",
+    "pk": 16,
+    "fields": {
+        "date": "2022-09-02T07:34:01.641Z",
+        "number": null,
+        "victims": 0,
+        "call": false,
+        "status": "in_work",
+        "applicant": 38,
+        "service": [
+            12
+        ]
+    }
+}
+]

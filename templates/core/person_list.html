@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+        <form method="GET">
+        {{ filter.form.as_p }}
+        <input type="submit"/>
+        </form>
+            {% for obj in filter.qs %}
+                Фамилия: {{ obj.surname }}<br>
+                Имя: {{ obj.name }}<br>
+                Отчество: {{ obj.patronymic }}<br>
+                Дата рождения: {{ obj.date }}<br>
+                Номер телефона: {{ obj.phone }}<br>
+                Состояние здоровья: {{ obj.health }}<br>
+                Пол: {{ obj.gender }}<br />
+            {% endfor %}
+    </div>
+    <div>
+    <h1>Список всех заявителей</h1>
+        {% for person in all_persons %}
+            {% if forloop.first or forloop.last %}
+                <h3>{{ forloop.counter }} - {{ person }}</h3>
+            {% else %}
+                <p>{{ forloop.counter }} - {{ person }}</p>
+            <hr>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

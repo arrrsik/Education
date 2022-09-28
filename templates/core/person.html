@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Список всех заявителей</h1>
+    <div>
+        {% for i in person %}
+            {% if forloop.first %}
+                <h4>{{ forloop.counter }}-{{ i }}</h4>
+            {% elif forloop.last %}
+                <h4>{{ forloop.counter }}-{{ i }}</h4>
+            {% else %}
+                <p>{{ forloop.counter }}-{{ i }}</p>
+            {% endif %}
+            <hr>
+        {% endfor %}
+    </div>
+{% endblock %}

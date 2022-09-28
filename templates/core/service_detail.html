@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+    <h3>Данные службы</h3>
+        <p>Название: {{ service.name|default:"-" }}</p>
+        <p>Код: {{ service.code|default:"-" }}</p>
+        <p>Телефон: {{ service.phone|default:"-" }}</p>
+        <p>Заявитель: {{ service.appeal|default:"-" }}</p>
+    </div>
+{% endblock %}

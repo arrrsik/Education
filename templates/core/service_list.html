@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+    <h1>Список всех служб</h1>
+        {% for service in services %}
+                <p>{{ forloop.counter }} - {{ service }}</p>
+            <hr>
+        {% endfor %}
+    </div>
+{% endblock %}
