@@ -15,7 +15,7 @@ class Person(models.Model):
     name = models.CharField('Имя', max_length=255)
     patronymic = models.CharField('Отчество', max_length=255)
     date = models.DateField('Дата рождения', null=True)
-    phone = models.PositiveSmallIntegerField('Номер телефона', blank=True, null=True)
+    phone = models.PositiveSmallIntegerField('Номер телефона', blank=True, null=True)  # не CharField ???
     health = models.CharField('Состояние здоровья', blank=True,
                               default='Практически здоров', max_length=255,
                               help_text='аллергоанамнез, хронические заболевания и т.п.')
@@ -24,7 +24,7 @@ class Person(models.Model):
 
     class Meta:
         verbose_name = 'Заявитель'
-        verbose_name_plural = 'Заявитель'
+        verbose_name_plural = 'Заявители'
         ordering = ('surname', 'name', 'patronymic')
 
     def __str__(self):
@@ -38,10 +38,10 @@ class EmergencyService(models.Model):
     name = models.CharField('Название', max_length=100)
     code = models.IntegerField('Код', help_text='01-Пожарная служба, 02-Полиция, 03-Скорая помощь', null=True)
     phone = models.CharField('Номер телефона', max_length=11)
-    appeal = models.ForeignKey(Person, on_delete=models.CASCADE, related_name='emergencyservices', null=True)
+    appeal = models.ForeignKey(Person, on_delete=models.CASCADE, related_name='emergencyservices', null=True)  # Должно ли быть отношение ???
 
     class Meta:
-        verbose_name = 'Экстренные службы'
+        verbose_name = 'Экстренная служба'
         verbose_name_plural = 'Экстренные службы'
         ordering = ('code',)
 
@@ -60,7 +60,7 @@ class Incident(models.Model):
         (STATUS_CHOICE_COMPLETED, 'Завершено'),
     )
 
-    date = models.DateTimeField('Дата обращения', auto_now=True)
+    date = models.DateTimeField('Дата обращения', auto_now_add=True)
     number = models.IntegerField('Номер обращения', blank=True, unique=True,
                                  db_index=True, editable=False, null=True)
     service = models.ManyToManyField(EmergencyService, null=True, related_name='incidents')
@@ -70,7 +70,7 @@ class Incident(models.Model):
     applicant = models.ForeignKey(Person, on_delete=models.CASCADE, related_name='incidents', null=True)
 
     class Meta:
-        verbose_name = 'Обращения'
+        verbose_name = 'Обращение'
         verbose_name_plural = 'Обращения'
         ordering = ('date', 'number')
 

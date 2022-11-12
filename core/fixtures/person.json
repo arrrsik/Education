@@ -22,7 +22,7 @@
         "patronymic": "Анатольевна",
         "date": "2002-11-12",
         "phone": 8373554872,
-        "health": "не болею",
+        "health": "Не болею",
         "gender": "W",
         "image": ""
     }
@@ -32,32 +32,88 @@
     "pk": 3,
     "fields": {
         "surname": "Сизов",
-        "name": "Валера",
-        "patronymic": "Римович",
+        "name": "Валерий",
+        "patronymic": "Ринатович",
         "date": "1995-08-16",
-        "phone": null,
-        "health": "Здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 4,
-    "fields": {
-        "surname": "Шаваев",
-        "name": "Артур",
-        "patronymic": "Кириллович",
-        "date": "1975-04-15",
         "phone": 8999999999,
         "health": "Здоров",
         "gender": "M",
         "image": ""
     }
 },
+    {
+    "model": "core.person",
+    "pk": 4,
+    "fields": {
+        "surname": "Грушина",
+        "name": "Влада",
+        "patronymic": "Петровна",
+        "date": "2002-08-15",
+        "phone": 89174758625,
+        "health": "Практически здоров",
+        "gender": "W",
+        "image": ""
+    }
+},
+{
+    "model": "core.person",
+    "pk": 5,
+    "fields": {
+        "surname": "Рыбаков",
+        "name": "Игорь",
+        "patronymic": "Николаевич",
+        "date": "1984-08-15",
+        "phone": 89652565896,
+        "health": "Практически здоров",
+        "gender": "M",
+        "image": ""
+    }
+},
+    {
+        "model": "core.person",
+        "pk": 6,
+        "fields": {
+            "surname": "Царев",
+            "name": "Евгений",
+            "patronymic": "Викторович",
+            "date": "1999-11-11",
+            "phone": 896525487595,
+            "health": "Ковид",
+            "gender": "M",
+            "image": ""
+        }
+    },
+    {
+        "model": "core.person",
+        "pk": 7,
+        "fields": {
+            "surname": "Жукова",
+            "name": "София",
+            "patronymic": "Владимировна",
+            "date": "2004-04-24",
+            "phone": 896525487595,
+            "health": "ОРВИ",
+            "gender": "W",
+            "image": ""
+        }
+    },
 {
     "model": "core.person",
     "pk": 8,
+    "fields": {
+        "surname": "Павлов",
+        "name": "Игорь",
+        "patronymic": "Фёдорович",
+        "date": "1985-05-16",
+        "phone": 89174756585,
+        "health": "Практически здоров",
+        "gender": "M",
+        "image": ""
+    }
+},
+    {
+    "model": "core.person",
+    "pk": 9,
     "fields": {
         "surname": "Бакуллин",
         "name": "Игорь",
@@ -69,21 +125,7 @@
         "image": ""
     }
 },
-{
-    "model": "core.person",
-    "pk": 9,
-    "fields": {
-        "surname": "Минеева",
-        "name": "Александра",
-        "patronymic": "Анатольевна",
-        "date": "2002-11-12",
-        "phone": 8373554872,
-        "health": "не болею",
-        "gender": "W",
-        "image": ""
-    }
-},
-{
+    {
     "model": "core.person",
     "pk": 10,
     "fields": {
@@ -92,776 +134,6 @@
         "patronymic": "Олегович",
         "date": "1986-12-11",
         "phone": 896587453,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 11,
-    "fields": {
-        "surname": "Петров",
-        "name": "Петр",
-        "patronymic": "Петрович",
-        "date": "2000-08-02",
-        "phone": 7777777777,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 12,
-    "fields": {
-        "surname": "Ильич",
-        "name": "Павел",
-        "patronymic": "Петрович",
-        "date": "1985-05-16",
-        "phone": 89632568457,
-        "health": "Плохое самочувствие",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 13,
-    "fields": {
-        "surname": "Фамилия",
-        "name": "Имя",
-        "patronymic": "Отчество",
-        "date": "1985-05-16",
-        "phone": 896254783264,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 14,
-    "fields": {
-        "surname": "Рэм",
-        "name": "Рустэм",
-        "patronymic": "Айназович",
-        "date": "1999-07-25",
-        "phone": 896325874121,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 15,
-    "fields": {
-        "surname": "А",
-        "name": "А",
-        "patronymic": "А",
-        "date": "1985-05-17",
-        "phone": 896523147594,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 16,
-    "fields": {
-        "surname": "Петров",
-        "name": "Володя",
-        "patronymic": "Валерьевич",
-        "date": "1985-05-20",
-        "phone": 896525878541,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 17,
-    "fields": {
-        "surname": "Ф",
-        "name": "Ф",
-        "patronymic": "Ф",
-        "date": "1985-01-01",
-        "phone": 896521478562,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 18,
-    "fields": {
-        "surname": "л",
-        "name": "л",
-        "patronymic": "л",
-        "date": "2000-08-02",
-        "phone": 11111111111,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 19,
-    "fields": {
-        "surname": "й",
-        "name": "й",
-        "patronymic": "й",
-        "date": "1985-05-16",
-        "phone": 89632587414,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 20,
-    "fields": {
-        "surname": "к",
-        "name": "к",
-        "patronymic": "к",
-        "date": "1999-07-25",
-        "phone": 896325874147,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 21,
-    "fields": {
-        "surname": "к",
-        "name": "к",
-        "patronymic": "к",
-        "date": "1985-05-16",
-        "phone": 5,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 22,
-    "fields": {
-        "surname": "в",
-        "name": "в",
-        "patronymic": "в",
-        "date": "2025-08-15",
-        "phone": null,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 23,
-    "fields": {
-        "surname": "к",
-        "name": "к",
-        "patronymic": "к",
-        "date": "1985-05-16",
-        "phone": null,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 24,
-    "fields": {
-        "surname": "к",
-        "name": "к",
-        "patronymic": "к",
-        "date": "1985-05-16",
-        "phone": 11111111111,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 25,
-    "fields": {
-        "surname": "qq",
-        "name": "q",
-        "patronymic": "q",
-        "date": "1985-05-16",
-        "phone": 89174756585,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 26,
-    "fields": {
-        "surname": "qq",
-        "name": "q",
-        "patronymic": "q",
-        "date": "1985-05-16",
-        "phone": 89174756585,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 27,
-    "fields": {
-        "surname": "а",
-        "name": "а",
-        "patronymic": "а",
-        "date": "1985-05-16",
-        "phone": 89658745423,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 28,
-    "fields": {
-        "surname": "н",
-        "name": "н",
-        "patronymic": "н",
-        "date": "2000-08-02",
-        "phone": 89789877898,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 29,
-    "fields": {
-        "surname": "Генадев",
-        "name": "Геннадий",
-        "patronymic": "Геннадьевич",
-        "date": "1985-05-16",
-        "phone": 89652565874,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 30,
-    "fields": {
-        "surname": "йвуйа",
-        "name": "уцацуа",
-        "patronymic": "цуац",
-        "date": "1985-05-16",
-        "phone": 89654563211,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 31,
-    "fields": {
-        "surname": "Фатвеев",
-        "name": "Михаил",
-        "patronymic": "Олегович",
-        "date": "1985-05-01",
-        "phone": 89582547453,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 32,
-    "fields": {
-        "surname": "керкер",
-        "name": "кркр",
-        "patronymic": "кркрикрик",
-        "date": "1985-05-01",
-        "phone": 89654563212,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 33,
-    "fields": {
-        "surname": "аврвр",
-        "name": "врвр",
-        "patronymic": "ыирватрвпр",
-        "date": "1985-05-07",
-        "phone": 89654563212,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 34,
-    "fields": {
-        "surname": "укпукп",
-        "name": "укпукп",
-        "patronymic": "упукпк",
-        "date": "1985-05-19",
-        "phone": 89654563219,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 35,
-    "fields": {
-        "surname": "цупацйпа",
-        "name": "цпацкп",
-        "patronymic": "цпацпцп",
-        "date": "2020-12-12",
-        "phone": 89652583212,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 36,
-    "fields": {
-        "surname": "Зелёный",
-        "name": "Шрек",
-        "patronymic": "Шрекович",
-        "date": "1955-05-26",
-        "phone": 89457832591,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": "project/media/ШРЕК.jpeg"
-    }
-},
-{
-    "model": "core.person",
-    "pk": 37,
-    "fields": {
-        "surname": "Бакуллин",
-        "name": "Игорь",
-        "patronymic": "Николаевич",
-        "date": "2002-12-11",
-        "phone": 89056874525,
-        "health": "Болею",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 38,
-    "fields": {
-        "surname": "Винеева",
-        "name": "Саша",
-        "patronymic": "Петровна",
-        "date": "1975-04-15",
-        "phone": 89652586412,
-        "health": "Здоровая",
-        "gender": "W",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 39,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 40,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 41,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 42,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 43,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 44,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 45,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 46,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 47,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 48,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 49,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 50,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 51,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 52,
-    "fields": {
-        "surname": "цпукупук",
-        "name": "цкцпкупу",
-        "patronymic": "укпукпу",
-        "date": "2025-08-15",
-        "phone": 896525487595,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 53,
-    "fields": {
-        "surname": "wfrewg",
-        "name": "ergerwgewr",
-        "patronymic": "ewergewrg",
-        "date": "2025-08-15",
-        "phone": 89654563212,
-        "health": "",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 54,
-    "fields": {
-        "surname": "ddasdf",
-        "name": "asfsfw",
-        "patronymic": "sfvsdgvsgs",
-        "date": "1945-10-15",
-        "phone": 89651235487,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 55,
-    "fields": {
-        "surname": "wefasdafa",
-        "name": "oijioj",
-        "patronymic": "iuhiughiu",
-        "date": "2025-08-15",
-        "phone": 4,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 56,
-    "fields": {
-        "surname": "wertyyu",
-        "name": "azxcdesw",
-        "patronymic": "jonhtmld",
-        "date": "2025-01-18",
-        "phone": 5,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 57,
-    "fields": {
-        "surname": "d",
-        "name": "d",
-        "patronymic": "d",
-        "date": "2025-08-15",
-        "phone": 10,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 58,
-    "fields": {
-        "surname": "ука",
-        "name": "цацв",
-        "patronymic": "хзл",
-        "date": "2025-08-15",
-        "phone": 2,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 59,
-    "fields": {
-        "surname": "aefeaf",
-        "name": "afaf",
-        "patronymic": "asfasf",
-        "date": "2025-08-15",
-        "phone": 68576,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 60,
-    "fields": {
-        "surname": "aefeaf",
-        "name": "afaf",
-        "patronymic": "asfasf",
-        "date": "2025-08-15",
-        "phone": 68576,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 61,
-    "fields": {
-        "surname": "aefeaf",
-        "name": "afaf",
-        "patronymic": "asfasf",
-        "date": "2025-08-15",
-        "phone": 68576,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 62,
-    "fields": {
-        "surname": "aefeaf",
-        "name": "afaf",
-        "patronymic": "asfasf",
-        "date": "2025-08-15",
-        "phone": 68576,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 63,
-    "fields": {
-        "surname": "Рыбаков",
-        "name": "Игорь",
-        "patronymic": "Николаевич",
-        "date": "2014-08-15",
-        "phone": 89652565896,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 64,
-    "fields": {
-        "surname": "Весёлый",
-        "name": "Человек",
-        "patronymic": "Василич",
-        "date": "2004-08-15",
-        "phone": 89632584587,
-        "health": "Практически здоров",
-        "gender": "M",
-        "image": ""
-    }
-},
-{
-    "model": "core.person",
-    "pk": 65,
-    "fields": {
-        "surname": "Один",
-        "name": "Два",
-        "patronymic": "Три",
-        "date": "2002-08-15",
-        "phone": 89174758625,
         "health": "Практически здоров",
         "gender": "M",
         "image": ""

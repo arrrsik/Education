@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Поиск обращений</h1>
+    <div>
+            <form method="get">
+            {{ filter.form.as_p }}
+            <input type="submit" />
+            </form>
+        <h2>Список происшествий и задействованных экс/служб</h2>
+        {% for obj in filter.qs %}
+            Дата обращения: {{ obj.date }}<br>
+            Номер обращения: {{ obj.number }}<br>
+            Количество пострадавших: {{ obj.victims }}<br>
+            ФИО заявителя: {{ obj.applicant.surname }} {{ obj.applicant.name }} {{ obj.applicant.patronymic }}<br>
+            <hr>
+        {% endfor %}
+    </div>
+       <div>
+        <h4>Среднее кол-во обращений: {{ service_count|floatformat }}</h4>
+        <footer>Всего обращений: {{ incidents|length  }}</footer>
+       <hr>
+    </div>
+{#    <h1>Список всех проишествий и задействованных экс/служб</h1>#}
+{#    <div>#}
+{#        {% for incident in incidents %}#}
+{#            {% if incident.service %}#}
+{#                <p>Дата обращения: {{incident.date|date:"d-m-Y" }}</p>#}
+{#                <p>Прошло времени с момента заведения заявки: {{incident.date|timesince }}</p>#}
+{#                <p>Номер обращения: {{ incident.number}}</p>#}
+{#                <p>Службы: {{ incident.service.all|join:" , "|upper|default:'-' }}</p>#}
+{#                <p>Звонить: {{ incident.call|yesno:"Да, Нет" }}</p>#}
+{#                <hr>#}
+{#            {% endif %}#}
+{#        {% endfor %}#}
+{#    </div>#}
+{#   <div>#}
+{#        <h4>Среднее кол-во обращений: {{ service_count|floatformat }}</h4>#}
+{#        <footer>Всего обращений: {{ incidents|length  }}</footer>#}
+{#       <hr>#}
+{#    </div>#}
+{% endblock %}

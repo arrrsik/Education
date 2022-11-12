@@ -88,7 +88,7 @@
 },
 {
     "model": "core.incident",
-    "pk": 10,
+    "pk": 7,
     "fields": {
         "date": "2022-08-30T10:26:05.418Z",
         "number": null,
@@ -103,7 +103,7 @@
 },
 {
     "model": "core.incident",
-    "pk": 11,
+    "pk": 8,
     "fields": {
         "date": "2022-08-31T01:29:33.331Z",
         "number": null,
@@ -118,7 +118,7 @@
 },
 {
     "model": "core.incident",
-    "pk": 12,
+    "pk": 9,
     "fields": {
         "date": "2022-08-31T14:01:53.109Z",
         "number": 30,
@@ -127,14 +127,14 @@
         "status": "STATUS_CHOICE_IN_WORK",
         "applicant": null,
         "service": [
-            9,
+            5,
             8
         ]
     }
 },
 {
     "model": "core.incident",
-    "pk": 13,
+    "pk": 10,
     "fields": {
         "date": "2022-08-31T14:04:10.876Z",
         "number": 11,
@@ -143,50 +143,7 @@
         "status": "STATUS_CHOICE_IN_WORK",
         "applicant": null,
         "service": [
-            9
-        ]
-    }
-},
-{
-    "model": "core.incident",
-    "pk": 14,
-    "fields": {
-        "date": "2022-08-31T14:05:00.757Z",
-        "number": 20,
-        "victims": 0,
-        "call": true,
-        "status": "STATUS_CHOICE_IN_WORK",
-        "applicant": 37,
-        "service": []
-    }
-},
-{
-    "model": "core.incident",
-    "pk": 15,
-    "fields": {
-        "date": "2022-09-02T07:29:14.558Z",
-        "number": null,
-        "victims": 2,
-        "call": true,
-        "status": "in_work",
-        "applicant": 31,
-        "service": [
-            11
-        ]
-    }
-},
-{
-    "model": "core.incident",
-    "pk": 16,
-    "fields": {
-        "date": "2022-09-02T07:34:01.641Z",
-        "number": null,
-        "victims": 0,
-        "call": false,
-        "status": "in_work",
-        "applicant": 38,
-        "service": [
-            12
+            7
         ]
     }
 }

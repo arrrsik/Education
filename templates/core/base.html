@@ -2,25 +2,32 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <title>Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
     {% include 'footer.html' %}
-    <h2>Стартовая страница</h2>
-    <p><a href="{% url 'core:list_incident' %}">Список обращений</a></p>
-    <p><a href="{% url 'core:person_list' %}">Список заявителей</a></p>
-    <p><a href="{% url 'core:service_list' %}">Список служб</a></p>
-    <p><a href="{% url 'core:phone_person' %}">Телефон заявителя</a></p>
-    <p><a href="{% url 'core:redirect' %}">На главную страницу</a></p>
-    <p><a href="{% url 'core:request_data' %}">Данные запроса</a></p>
-    <p><a href="{% url 'core:person_data' %}">Данные заявителя</a></p>
-    <p><a href="{% url 'core:incidents_count' %}">Колличество обращений</a></p>
-    <p><a href="{% url 'core:create_person' %}">Создать Персонажа</a></p>
-    <p><a href="{% url 'core:create_service' %}">Создать службу</a></p>
-    <p><a href="{% url 'core:create_incident' %}">Создать обращение</a></p>
-    <p><a href="{% url 'core:update_incident' 1%}">Обновить данные обращения</a></p>
-    <p><a href="{% url 'core:update_person' 1%}">Обновить данные человека</a></p>
-    <p><a href="{% url 'core:update_service' 1%}">Обновить данные службы</a></p>
+    <h2 align="center">Добро пожаловать на стартовую страницу</h2>
+    <h3 align="center">Выберите действие</h3><br/>
+    <p align="center"><a href="{% url 'core:list_incident' %}">Список обращений</a></p>
+    <p align="center"><a href="{% url 'core:person_list' %}">Список заявителей</a></p>
+    <p align="center"><a href="{% url 'core:service_list' %}">Список служб</a></p>
+    <p align="center"><a href="{% url 'core:phone_person' %}">Телефон заявителя</a></p>
+    <p align="center"><a href="{% url 'core:redirect' %}">На главную страницу</a></p>
+    <p align="center"><a href="{% url 'core:request_data' %}">Данные запроса</a></p>
+    <p align="center"><a href="{% url 'core:person_data' %}">Данные заявителя</a></p>
+    <p align="center"><a href="{% url 'core:incidents_count' %}">Количество обращений</a></p>
+    <p align="center"><a href="{% url 'core:create_person' %}">Создать заявителя</a></p>
+    <p align="center"><a href="{% url 'core:create_service' %}">Создать службу</a></p>
+    <p align="center"><a href="{% url 'core:create_incident' %}">Создать обращение</a></p>
+    <p align="center"><a href="{% url 'core:update_incident' 1%}">Обновить данные обращения</a></p>
+    <p align="center"><a href="{% url 'core:update_person' 1%}">Обновить данные заявителя</a></p>
+    <p align="center"><a href="{% url 'core:update_service' 1%}">Обновить данные службы</a></p>
+
+    <p align="center"><a href="{% url 'core:service_detail' 1%}">Посмотреть данные службы</a></p>
+    <p align="center"><a href="{% url 'core:person_detail' 1%}">Данные заявителя(person_detail)</a></p>
+    <p align="center"><a href="{% url 'core:incident_detail' 1%}">Данные происшествия(incident_detail)</a></p>
+    <p align="center"><a href="{% url 'core:json' 1%}">JSON</a></p>
     <hr>
     {% block content %}
 

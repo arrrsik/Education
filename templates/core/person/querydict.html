@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
+        <h3>Для получения данных заявителя, введите его номер телефона</h3>
+        <label>Введите номер</label>
+    <form method="GET">
+        <input type="text" name="phone">
+        <input type="submit" value="Получить">
+    </form>
      <div>
     <h3>Ваши данные</h3>
         <p>Фамилия: {{ phone.surname|default:"-" }}</p>

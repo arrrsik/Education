@@ -34,6 +34,9 @@ Covid.service.set(list_services)
 
 3)  Person.objects.all().first()
     <Person: Бакуллин-Игорь-Николаевич-2002-12-11-89056874525-Болею-M>
+SQL:
+    SELECT * FROM core_person
+    WHERE id = 1;
 
 2.
 Получить все обращения заявителя двумя способами
@@ -46,10 +49,16 @@ Igor.Incidents.all()
 Получить первые три экстренные службы
 EmergencyService.objects.all()[:3]
 <QuerySet [<EmergencyService: Пожарная помощь-1-101>, <EmergencyService: Пожарная помощь-1-101>, <EmergencyService: Пожарная помощь-1-101>]>
+SQL:
+    SELECT * FROM core_incident
+    WHERE id < 4;
 
 4.
 Получить последние пять заявителей
 Person.objects.all().reverse()[:5]
+SQL:
+    SELECT * FROM core_person ORDER BY id DESC LIMIT 5;
+
 <QuerySet [<Person: цупацйпа-цпацкп-цпацпцп-2020-12-12-Практически здоров>,
 <Person: укпукп-укпукп-упукпк-1985-05-19-Практически здоров>,
 <Person: н-н-н-2000-08-02-Практически здоров>,
@@ -95,12 +104,15 @@ len(connection.queries)
 8.
 Вывести общее число обращений
 Incident.objects.count()
-
+SQL:
+    SELECT COUNT() FROM core_incident;
 
 9.
 Получить случайное обращение
 Incident.objects.order_by('?').first()
 <Incident: 2022-08-16 21:20:15.005741+00:00-1674-help_1.EmergencyService.None>
+SQL:
+    SELECT * FROM core_person ORDER BY RANDOM() LIMIT 1;
 
 1.
 Получить обращение с заявителем, идентификатор которого равен 1!
@@ -134,7 +146,8 @@ Person.objects.filter(incidents=None, gender="M")
 Отсортировать всех заявителей по идентификатору
 Person.objects.order_by('id')
 <QuerySet [<Applicant: None-None-None-2002-12-11--Болею-M>, <Applicant: None-None-None-2000-12-11--Болею-W>, <Applicant: Лотух-Гора-Роп-2002-12-11-89587453684-Болею-M>, <Applicant: Зима-Лето-шщгбьто-2002-11-12-89587453684-не болею-M>, <Applicant: Лотух-Гора-Роп-2002-12-11-89587453684-Болею-M>, <Applicant: Зима-Мох-шщгбьто-2002-11-12-89587453684-не болею-M>, <Applicant: Лотух-Гора-Роп-2002-12-11-89587453684-Болею-M>]>
-
+SQL:
+    SELECT * FROM core_person ORDER BY id;
 4.
 Получить всех несовершеннолетних заявителей
 Person.objects.filter(date__lte="2004-01-01")
@@ -142,6 +155,10 @@ Person.objects.filter(date__lte="2004-01-01")
 
 Person.objects.filter(date__year__lte=2004)
 <QuerySet [<Applicant: None-None-None-2002-12-11--Болею-M>, <Applicant: None-None-None-2000-12-11--Болею-W>, <Applicant: Зима-Лето-шщгбьто-2002-11-12-89587453684-не болею-M>, <Applicant: Зима-Мох-шщгбьто-2002-11-12-89587453684-не болею-M>, <Applicant: Лотух-Гора-Роп-2002-12-11-89587453684-Болею-M>, <Applicant: Лотух-Гора-Роп-2002-12-11-89587453684-Болею-M>, <Applicant: Лотух-Гора-Роп-2002-12-11-89587453684-Болею-M>]>
+
+SQL:
+    SELECT date FROM core_person
+    WHERE date > '2004 11 08';
 
 5.Получить всех совершеннолетних заявителей
 Applicant.objects.filter(date__year__gte=2004)
@@ -255,7 +272,7 @@ Applicant.objects.bulk_create([Applicant(name="Dom", data="2012-12-12"), Applica
 <Applicant: None-MOY-None-2012-11-11--Практически здоров-M>,
 <Applicant: None-hyg-None-2012-10-10--Практически здоров-M>]
 
-24.    bulk_UPDATE()
+24.
 Измените несколько заявителей. Для поля "состояние здоровья" задайте значение "Полностью здоров"
 
 objs = list(models.Person.objects.all()[:7])
@@ -266,8 +283,8 @@ models.Person.objects.bulk_update(objs, ['health'])
 
 25.
 Выведите имя заявителя у какого-либо обращения. Убедитесь, что было сделано не более одного запроса.
-    models.Incident.objects.all()[2].applicant.name
-    'Игорь'
+    models.Incident.objects.prefetch_related('applicant').get(id=5).applicant.name
+
 26.
 Выведите список всех обращений с указанием списка задействованных экстренных служб в следующем формате:
 "номер обращения: , список кодов служб:. Убедитесь, что было сделано не более двух запросов в БД.

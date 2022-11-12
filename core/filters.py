@@ -15,7 +15,7 @@ class PersonFilter(filters.FilterSet):
     def filter_full_name(self, queryset: QuerySet, name: str, value: str) -> QuerySet:
         for term in value.split():
             return queryset.filter(
-                Q(surname__iexact=term) |
+                Q(surname__iexact=term) |  # icontains ????
                 Q(name__iexact=term) |
                 Q(patronymic__iexact=term)
             )

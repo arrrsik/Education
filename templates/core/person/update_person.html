@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Форма редактирования персонажа</h1>
+    <h1>Форма редактирования заявителя</h1>
     <form method = "POST" enctype = "multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}

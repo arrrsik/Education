@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3>Для получения номера телефона заявителя введите его ID</h3>
+        <label>Введите ID</label>
+    <form method="GET">
+        <input type="text" name="pk">
+        <input type="submit" value="Поиск">
+    </form>
+    <h3>Номер телефона: {{ person.phone }}</h3>
+{% endblock %}
