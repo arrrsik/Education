@@ -44,6 +44,8 @@ Incident.objects.filter(applicant=Igor)
 <QuerySet [<Incident: 2022-08-24 12:15:00.488348+00:00-2-core.EmergencyService.None-Бакуллин-Игорь-Николаевич-2002-12-11-89056874525-Болею-M>]>
 Igor.Incidents.all()
 <QuerySet [<Incident: 2022-08-24 12:15:00.488348+00:00-2-core.EmergencyService.None-Бакуллин-Игорь-Николаевич-2002-12-11-89056874525-Болею-M>]>
+Сделать через related_name
+
 
 3.
 Получить первые три экстренные службы
