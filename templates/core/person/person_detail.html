@@ -2,19 +2,23 @@
 
 {% block content %}
     <div>
-    <h3>Ваши данные</h3>
+    <h3>Персональные данные заявителя</h3>
         <p>Фамилия: {{ person.surname|default:"-" }}</p>
         <p>Имя: {{ person.name|default:"-" }}</p>
         <p>Отчество: {{ person.patronymic|default:"-" }}</p>
         <p>Дата рождения: {{ person.data|date:"d-m-Y" |default:"-" }}</p>
         <p>Пол: {{ person.gender|default:"-"|lower }}</p>
         <p>Номер телефона: {{ person.phone|default:"-" }}</p>
-    </div>
+        {% if person.image %}
+            <img alt="" src="{{ person.image.url }}"><br>
+        {% endif %}
+        <a href="{% url 'core:update_person' person.id%}">Редактировать данные заявителя</a>
+    </div><br>
     <div>
-        <h3>Ваши обращения</h3>
+        <h3>Обращения заявителя</h3>
         {% if incidents_person.all %}
             {% for incident in incidents_person %}
-                <p>Дата обращения: {{ incident.data|default:"-" }}</p>
+                <p>Дата обращения: {{ incident.date|default:"-" }}</p>
                 <p>Номер обращения: {{ incident.number|default:"-" }}</p>
                 <hr>
             {% endfor %}

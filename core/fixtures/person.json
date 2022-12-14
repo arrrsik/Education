@@ -1,7 +1,6 @@
 [
 {
     "model": "core.person",
-    "pk": 1,
     "fields": {
         "surname": "Бакуллин",
         "name": "Игорь",
@@ -15,7 +14,6 @@
 },
 {
     "model": "core.person",
-    "pk": 2,
     "fields": {
         "surname": "Минеева",
         "name": "Александра",
@@ -29,7 +27,6 @@
 },
 {
     "model": "core.person",
-    "pk": 3,
     "fields": {
         "surname": "Сизов",
         "name": "Валерий",
@@ -43,7 +40,6 @@
 },
     {
     "model": "core.person",
-    "pk": 4,
     "fields": {
         "surname": "Грушина",
         "name": "Влада",
@@ -57,7 +53,6 @@
 },
 {
     "model": "core.person",
-    "pk": 5,
     "fields": {
         "surname": "Рыбаков",
         "name": "Игорь",
@@ -71,7 +66,6 @@
 },
     {
         "model": "core.person",
-        "pk": 6,
         "fields": {
             "surname": "Царев",
             "name": "Евгений",
@@ -85,7 +79,6 @@
     },
     {
         "model": "core.person",
-        "pk": 7,
         "fields": {
             "surname": "Жукова",
             "name": "София",
@@ -99,7 +92,6 @@
     },
 {
     "model": "core.person",
-    "pk": 8,
     "fields": {
         "surname": "Павлов",
         "name": "Игорь",
@@ -113,7 +105,6 @@
 },
     {
     "model": "core.person",
-    "pk": 9,
     "fields": {
         "surname": "Бакуллин",
         "name": "Игорь",
@@ -127,7 +118,6 @@
 },
     {
     "model": "core.person",
-    "pk": 10,
     "fields": {
         "surname": "Петров",
         "name": "Павел",

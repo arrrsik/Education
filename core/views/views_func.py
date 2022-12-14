@@ -22,8 +22,11 @@ def incidents_count(request): #3
 '''Создать представление, отображающее номер телефона заявителя с определенным id,
         указанным в качестве параметра к запросу. Вернуть 404 если такого заявителя не существует.'''
 def phone_person(request):#5
-    person = get_object_or_404(Person, pk=request.GET.get('pk', 1))
-    return render(request, 'person/num_phone.html', context={'person': person})
+    try:
+        person = get_object_or_404(Person, pk=request.GET.get('pk', 1))
+        return render(request, 'person/num_phone.html', context={'person': person})
+    except ValueError:
+        return HttpResponse('Поле ID не может быть пустым, вернитесь и введите id заявителя')
 
 
 '''Создать представление, которое перенаправляет пользователя на другую страницу'''
@@ -40,8 +43,11 @@ def request_data(request): #9
 '''Создать представление, которое отображает данные заявителя,
         номер телефона которого передается в параметрах запроса. (querydict)'''
 def person_data(request): #11
-    phone = Person.objects.filter(phone=request.GET.get('phone')).first()
-    return render(request, 'person/querydict.html', context={'phone': phone})
+    try:
+        phone = Person.objects.filter(phone=request.GET.get('phone')).first()
+        return render(request, 'person/querydict.html', context={'phone': phone})
+    except ValueError:
+        return HttpResponse('Поле телефона не может быть пустым, вернитесь и введите телефон заявителя')
 
 
 '''Создать представление, отдающее данные заявителя в json-формате. (json response)'''
@@ -58,10 +64,10 @@ def person_list(request): #15
 def list_incident(request):#17
     incidents = Incident.objects.all()
     service_count = Incident.objects.annotate(Count('service')).aggregate(Avg('service__count'))['service__count__avg']
-    f = IncidentFilter(request.GET, queryset=Incident.objects.all())
+    filter = IncidentFilter(request.GET, queryset=Incident.objects.all())
     return render(request, 'incident/incident.html', context={'incidents': incidents,
-                                                     'service_count': service_count,
-                                                     'filter': f})
+                                                              'service_count': service_count,
+                                                              'filter': filter})
 
 
 def service_list(request):

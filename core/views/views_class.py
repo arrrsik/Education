@@ -148,13 +148,13 @@ class UpdateServiceView(UpdateView):
     form_class = EmergencyServiceForm
 
 
-class UpdateIncidentView(CreateView):
+class UpdateIncidentView(UpdateView):
     model = Incident
     template_name = "incident/update_incident.html"
     form_class = IncidentForm
 
 
-class UpdatePersonView(CreateView):
+class UpdatePersonView(UpdateView):
     model = Person
     template_name = "person/update_person.html"
     form_class = PersonForm

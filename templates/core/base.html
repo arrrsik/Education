@@ -29,8 +29,15 @@
     <p align="center"><a href="{% url 'core:incident_detail' 1%}">Данные происшествия(incident_detail)</a></p>
     <p align="center"><a href="{% url 'core:json' 1%}">JSON</a></p>
     <hr>
+    <div class="block_content">
     {% block content %}
 
     {% endblock %}
+    </div>
+      <style>
+   .block_content {
+     margin-left: 1%;
+   }
+  </style>
 </body>
 </html>

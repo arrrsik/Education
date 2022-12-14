@@ -32,7 +32,7 @@ class IncidentAdmin(admin.ModelAdmin):
 
 
 class EmergencyServiceAdmin(admin.ModelAdmin):
-    list_display = ('name', 'code', 'phone', 'appeal')
+    list_display = ('name', 'code', 'phone')
     list_editable = ('code', 'phone')
     search_fields = ('code',)
     ordering = ('id',)

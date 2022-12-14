@@ -9,9 +9,9 @@
     </form>
      <div>
     <h3>Ваши данные</h3>
-        <p>Фамилия: {{ phone.surname|default:"-" }}</p>
-        <p>Имя: {{ phone.name|default:"-" }}</p>
-        <p>Отчество: {{ phone.patronymic|default:"-" }}</p>
+        <p>Фамилия: {{ phone.surname|title|default:"-" }}</p>
+        <p>Имя: {{ phone.name|title|default:"-" }}</p>
+        <p>Отчество: {{ phone.patronymic|title|default:"-" }}</p>
         <p>Дата рождения: {{ phone.data|date:"d-m-Y" |default:"-" }}</p>
         <p>Пол: {{ phone.gender|default:"-"|lower }}</p>
         <p>Номер телефона: {{ phone.phone|default:"-" }}</p>

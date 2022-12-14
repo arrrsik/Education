@@ -9,7 +9,21 @@
         </form>
         <h2>Список заявителей</h2>
             {% for obj in filter.qs %}
-                <p>{{ forloop.counter }}</p> Фамилия: {{ obj.surname }}<br>
+                {% if forloop.first or forloop.last %}
+                    <p>{{ forloop.counter }}</p>
+                    <a href="{% url 'core:person_detail' obj.id%}">Данные заявителя</a>
+                                                            <h6>Фамилия: {{ obj.surname }}<br>
+                                                            Имя: {{ obj.name }}<br>
+                                                            Отчество: {{ obj.patronymic }}<br>
+                                                            Дата рождения: {{ obj.date }}<br>
+                                                            Номер телефона: {{ obj.phone }}<br>
+                                                            Состояние здоровья: {{ obj.health }}<br>
+                                                            Пол: {{ obj.gender }}<br></h6>
+                <hr>
+                {% else %}
+                <p>{{ forloop.counter }}</p>
+                <a href="{% url 'core:person_detail' obj.id%}">Данные заявителя</a><br>
+                                             Фамилия: {{ obj.surname }}<br>
                                              Имя: {{ obj.name }}<br>
                                              Отчество: {{ obj.patronymic }}<br>
                                              Дата рождения: {{ obj.date }}<br>
@@ -17,6 +31,7 @@
                                              Состояние здоровья: {{ obj.health }}<br>
                                              Пол: {{ obj.gender }}<br />
                 <hr>
+            {% endif %}
             {% endfor %}
     </div>
 {#    <div>#}

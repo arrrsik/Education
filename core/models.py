@@ -1,6 +1,4 @@
 from django.db import models
-from django.contrib import admin
-from django.db import models
 from django.urls import reverse
 
 
@@ -11,16 +9,37 @@ class Person(models.Model):
         ('W', 'Woman'),
     )
 
-    surname = models.CharField('Фамилия', max_length=255)
-    name = models.CharField('Имя', max_length=255)
-    patronymic = models.CharField('Отчество', max_length=255)
-    date = models.DateField('Дата рождения', null=True)
-    phone = models.PositiveSmallIntegerField('Номер телефона', blank=True, null=True)  # не CharField ???
-    health = models.CharField('Состояние здоровья', blank=True,
-                              default='Практически здоров', max_length=255,
-                              help_text='аллергоанамнез, хронические заболевания и т.п.')
-    gender = models.CharField('Ваш пол', max_length=1, choices=GENDER_CHOICES, default='M')
-    image = models.ImageField('Ваша фотография', blank=True, upload_to='project/media') #
+    surname = models.CharField(
+        'Фамилия',
+        max_length=255)
+    name = models.CharField(
+        'Имя',
+        max_length=255)
+    patronymic = models.CharField(
+        'Отчество',
+        max_length=255)
+    date = models.DateField(
+        'Дата рождения',
+        null=True)
+    phone = models.PositiveSmallIntegerField(
+        'Номер телефона',
+        blank=True,
+        null=True)
+    health = models.CharField(
+        'Состояние здоровья',
+        blank=True,
+        default='Практически здоров',
+        max_length=255,
+        help_text='аллергоанамнез, хронические заболевания и т.п.')
+    gender = models.CharField(
+        'Ваш пол',
+        max_length=1,
+        choices=GENDER_CHOICES,
+        default='M')
+    image = models.ImageField(
+        'Ваша фотография',
+        blank=True,
+        upload_to='project/media')
 
     class Meta:
         verbose_name = 'Заявитель'
@@ -35,10 +54,16 @@ class Person(models.Model):
 
 
 class EmergencyService(models.Model):
-    name = models.CharField('Название', max_length=100)
-    code = models.IntegerField('Код', help_text='01-Пожарная служба, 02-Полиция, 03-Скорая помощь', null=True)
-    phone = models.CharField('Номер телефона', max_length=11)
-    appeal = models.ForeignKey(Person, on_delete=models.CASCADE, related_name='emergencyservices', null=True)  # Должно ли быть отношение ???
+    name = models.CharField(
+        'Название',
+        max_length=100)
+    code = models.IntegerField(
+        'Код',
+        help_text='01-Пожарная служба, 02-Полиция, 03-Скорая помощь',
+        null=True)
+    phone = models.CharField(
+        'Номер телефона',
+        max_length=11)
 
     class Meta:
         verbose_name = 'Экстренная служба'
@@ -46,7 +71,7 @@ class EmergencyService(models.Model):
         ordering = ('code',)
 
     def __str__(self):
-        return f'{self.name}-{self.code}-{self.phone}-{self.appeal}'
+        return f'{self.name}'
 
     def get_absolute_url(self):
         return reverse("core:base")
@@ -60,14 +85,34 @@ class Incident(models.Model):
         (STATUS_CHOICE_COMPLETED, 'Завершено'),
     )
 
-    date = models.DateTimeField('Дата обращения', auto_now_add=True)
-    number = models.IntegerField('Номер обращения', blank=True, unique=True,
-                                 db_index=True, editable=False, null=True)
-    service = models.ManyToManyField(EmergencyService, null=True, related_name='incidents')
-    victims = models.PositiveSmallIntegerField('Количество пострадавших', blank=True)
-    call = models.BooleanField('Звонок', default=True)
-    status = models.CharField(max_length=255, choices=STATUS_CHOICES, default=STATUS_CHOICE_IN_WORK)
-    applicant = models.ForeignKey(Person, on_delete=models.CASCADE, related_name='incidents', null=True)
+    date = models.DateTimeField(
+        'Дата обращения',
+        auto_now_add=True)
+    number = models.IntegerField(
+        'Номер обращения',
+        blank=True,
+        unique=True,
+        db_index=True,
+        editable=False,
+        null=True)
+    service = models.ManyToManyField(
+        EmergencyService,
+        related_name='incidents')
+    victims = models.PositiveSmallIntegerField(
+        'Количество пострадавших',
+        blank=True)
+    call = models.BooleanField(
+        'Звонок',
+        default=True)
+    status = models.CharField(
+        max_length=255,
+        choices=STATUS_CHOICES,
+        default=STATUS_CHOICE_IN_WORK)
+    applicant = models.ForeignKey(
+        Person,
+        on_delete=models.CASCADE,
+        related_name='incidents',
+        null=True)
 
     class Meta:
         verbose_name = 'Обращение'
