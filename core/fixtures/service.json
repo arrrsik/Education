@@ -5,8 +5,7 @@
     "fields": {
         "name": "Скорая помощь",
         "code": 3,
-        "phone": "103",
-        "appeal": null
+        "phone": "103"
     }
 },
 {
@@ -15,8 +14,7 @@
     "fields": {
         "name": "Пожарная служба",
         "code": 1,
-        "phone": "101",
-        "appeal": null
+        "phone": "101"
     }
 },
 {
@@ -25,8 +23,7 @@
     "fields": {
         "name": "Газовая служба",
         "code": 4,
-        "phone": "104",
-        "appeal": null
+        "phone": "104"
     }
 },
 {
@@ -35,8 +32,7 @@
     "fields": {
         "name": "ЖКХ",
         "code": 15,
-        "phone": "115",
-        "appeal": null
+        "phone": "115"
     }
 },
 {
@@ -45,8 +41,7 @@
     "fields": {
         "name": "Полиция",
         "code": 2,
-        "phone": "102",
-        "appeal": null
+        "phone": "102"
     }
 },
 {
@@ -55,8 +50,7 @@
     "fields": {
         "name": "Сантехник",
         "code": 5,
-        "phone": "105",
-        "appeal": null
+        "phone": "105"
     }
 },
 {
@@ -65,8 +59,7 @@
     "fields": {
         "name": "Электрик",
         "code": 7,
-        "phone": "107",
-        "appeal": null
+        "phone": "107"
     }
 },
 {
@@ -75,8 +68,7 @@
     "fields": {
         "name": "Интернет",
         "code": 9,
-        "phone": "109",
-        "appeal": null
+        "phone": "109"
     }
 }
 ]

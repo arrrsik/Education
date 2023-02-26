@@ -5,9 +5,9 @@ from django.db import migrations
 
 
 def load_data(apps, schema_editor):  # noqa
-    call_command('loaddata', 'incident.json')
     call_command('loaddata', 'person.json')
     call_command('loaddata', 'service.json')
+    call_command('loaddata', 'incident.json')
 
 
 class Migration(migrations.Migration):
