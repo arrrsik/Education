@@ -138,12 +138,6 @@ Person.objects.order_by('name')[0]
 models.Person.objects.filter(phone__isnull=True)
 models.Person.objects.filter(name__icontains='е')
 models.Person.objects.filter(date__lte='2020-02-01')
-
-```
-- Выражения могут ссылаться на преобразования
-```
-from django.db.models import Min
-Phone.objects.aggregate(first_published_year=Min('dt_year'))
 ```
 - alias()
 ```
